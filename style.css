@@ -15,28 +15,31 @@ body {
     z-index: 1;
 }
 
-/* Mensaje */
+/* Mensaje grande */
 #mensaje {
     position: fixed;
-    top: 10%;
+    top: 5%;
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
+    font-weight: bold;
     z-index: 3;
+    text-shadow: 0 0 20px white;
 }
 
-/* Dinosaurio centrado y girando */
+/* Dinosaurio centrado, grande y girando */
 #dino {
     position: fixed;
-    width: 300px;
+    width: 450px; /* MÁS GRANDE */
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    animation: spin 4s linear infinite;
+    animation: spin 6s linear infinite; /* GIRA MÁS LENTO Y SIEMPRE */
 }
 
+/* Animación de giro */
 @keyframes spin {
     from {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -45,5 +48,4 @@ body {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-
 
