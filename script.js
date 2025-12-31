@@ -54,7 +54,8 @@ function drawRetro() {
 // Animación principal
 function animate() {
     ctx.fillStyle = "rgba(0,0,0,0.2)";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
 
     if (Math.random() < 0.08) createFirework();
 
@@ -80,3 +81,4 @@ setTimeout(() => {
 setInterval(() => {
     document.title = "FELIZ AÑO ZORRAS 🎆";
 }, 500);
+
